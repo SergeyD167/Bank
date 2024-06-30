@@ -13,7 +13,7 @@ class Bank {
     
     func addAccount(accountId: String, initialBalance: Double = 0) -> Bool {
         if accounts[accountId] == nil {
-            accounts[accountId] = Account(accountId: accountId, initialBalance: initialBalance)
+            accounts[accountId] = Account(accountID: accountId, initialBalance: initialBalance)
             return true
         }
         return false
